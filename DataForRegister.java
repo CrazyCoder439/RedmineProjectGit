@@ -34,7 +34,7 @@ public class DataForRegister
 			data = cell.getStringCellValue();
 			file.close();
 			excel.close();
-		
+		}
 		catch(Exception e)
 			{
 			System.out.println("I'm in read data catch block");
