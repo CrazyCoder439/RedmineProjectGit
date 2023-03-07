@@ -36,23 +36,6 @@ public class DataForRegister
 			file.close();
 			excel.close();
 		
-			FileInputStream inputStream = new FileInputStream("/Users/rajusaru/Desktop/Selenium/DataDriven/LoginInput.xlsx");
-	        XSSFWorkbook workbook = (XSSFWorkbook) WorkbookFactory.create(inputStream);
-	        XSSFSheet newsheet = workbook.getSheetAt(0);
-	        
-	        XSSFCell newcell = newsheet.getRow(rowNo).createCell(cellNo);
-	        newcell.setCellValue(data);
-	        inputStream.close();
-	        
-            FileOutputStream outputStream = new FileOutputStream("/Users/rajusaru/Desktop/Selenium/DataDriven/LoginInput.xlsx");
-            workbook.write(outputStream);
-            workbook.close();
-            outputStream.close();
-            
-            System.out.println("Data had been written");
-			//System.out.println(data);
-		}
-		
 		catch(Exception e)
 			{
 			System.out.println("I'm in read data catch block");
@@ -64,23 +47,7 @@ public class DataForRegister
 }
 	
 }
-	/*public static void writeData(int cellNum, int rowNum, String data) 
-	{
-		
-		try {
-				
-			
-			
-		catch(Exception e)
-			{
-			System.out.println("I'm in write Data catch block");
-			}
-		
-		
-		
-		*/
-		
-		
+	
 
 	
 	
